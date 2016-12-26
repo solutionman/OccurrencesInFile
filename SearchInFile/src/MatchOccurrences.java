@@ -8,6 +8,8 @@ public class MatchOccurrences {
     public MatchOccurrences(String nameOfFile, double numberToSearch){
         this.nameOfFile = nameOfFile;
         this.numberToSearch = numberToSearch;
+
+
     }
 
 }
