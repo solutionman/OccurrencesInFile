@@ -12,6 +12,7 @@ public class Search {
 
         MatchOccurrences reestr = new MatchOccurrences("payments.csv", sumToSearch);
 
+        reestr.catchOccurrences();
 
     }
 }
