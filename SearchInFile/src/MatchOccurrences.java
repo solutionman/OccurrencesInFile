@@ -7,9 +7,9 @@ import java.io.IOException;
 
 public class MatchOccurrences {
     private String nameOfFile;
-    private double numberToSearch;
+    private String numberToSearch;
 
-    public MatchOccurrences(String nameOfFile, double numberToSearch){
+    public MatchOccurrences(String nameOfFile, String numberToSearch){
         this.nameOfFile = nameOfFile;
         this.numberToSearch = numberToSearch;
 
@@ -32,10 +32,13 @@ public class MatchOccurrences {
             }
             buffReader.close();
 
-            arrayOfLines = unparsedFile.split(";");
+            arrayOfLines = unparsedFile.split("\"");
 
             for(int i=0; i< arrayOfLines.length; ++i){
-                System.out.println("get something");
+                if(arrayOfLines[i].equals(numberToSearch) ){
+                    System.out.println("Catch " + arrayOfLines[i]);
+                }
+                //System.out.println("get something");
             }
 
             return 2;

@@ -8,7 +8,7 @@ public class Search {
         System.out.println("Name of file by default: payments.csv ");
         System.out.print("Put file in folder and enter the sum to search: ");
 
-        double sumToSearch = userInput.nextDouble();
+        String sumToSearch = userInput.nextLine();
 
         MatchOccurrences reestr = new MatchOccurrences("payments.csv", sumToSearch);
 
