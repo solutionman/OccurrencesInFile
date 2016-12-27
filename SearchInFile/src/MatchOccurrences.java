@@ -12,4 +12,9 @@ public class MatchOccurrences {
 
     }
 
+
+    public int catchOccurrences(){
+        return 2;
+    }
+
 }

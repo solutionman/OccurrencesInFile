@@ -10,6 +10,8 @@ public class Search {
 
         double sumToSearch = userInput.nextDouble();
 
+        MatchOccurrences reestr = new MatchOccurrences("payments.csv", sumToSearch);
+
 
     }
 }
