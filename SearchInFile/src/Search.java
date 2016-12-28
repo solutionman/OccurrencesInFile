@@ -1,4 +1,12 @@
-// searching occurrences in file (mostly in xls)
+/*
+Searching occurrences in file (mostly in xls)
+ The task is to find in file sums from which might be our sum:
+ For example, searching  6239.66
+
+ 2002.26+900.3+3337.1=6239.66
+
+ 2002.26  900.3  3337.1  sums in reestr
+*/
 
 import java.util.Scanner;
 
