@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.util.DoubleSummaryStatistics;
 
 public class MatchOccurrences {
-    private String nameOfFile;
+    private String pathToFile;
     private String numberToSearch;
 
-    public MatchOccurrences(String nameOfFile, String numberToSearch) {
-        this.nameOfFile = nameOfFile;
+    public MatchOccurrences(String pathToFile, String numberToSearch) {
+        this.pathToFile = pathToFile;
         this.numberToSearch = numberToSearch;
 
 
@@ -25,7 +25,7 @@ public class MatchOccurrences {
         String arrayOfLines[];
 
         try {
-            FileReader reader = new FileReader(nameOfFile);
+            FileReader reader = new FileReader(pathToFile);
             BufferedReader buffReader = new BufferedReader(reader);
 
             while ((line = buffReader.readLine()) != null) {
