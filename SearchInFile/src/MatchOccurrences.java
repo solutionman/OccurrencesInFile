@@ -45,18 +45,28 @@ public class MatchOccurrences {
 
             for (int i = 0; i < arrayOfLines.length; ++i) {
                 for(int j = i; j< arrayOfLines.length; ++j){
+                    for(int k = j ; k < arrayOfLines.length; ++k) {
 
-                    if (arrayOfLines[i].equals(numberToSearch)) {
-                        System.out.println("Catch " + arrayOfLines[i]);
+                        if (arrayOfLines[i].equals(numberToSearch)) {
+                            System.out.println("Catch " + arrayOfLines[i]);
+                        }
+
+                        double temp = Double.parseDouble(arrayOfLines[i]) + Double.parseDouble(arrayOfLines[j]);
+                        String tempString = String.valueOf(temp);
+
+                        if (tempString.equals(numberToSearch)) {
+                            System.out.printf("Catch %s + %s = %s\n", arrayOfLines[i], arrayOfLines[j], numberToSearch);
+                        }
+                        //System.out.println("get something");
+
+                        double temp3Numbers = Double.parseDouble(arrayOfLines[i]) + Double.parseDouble(arrayOfLines[j]) + Double.parseDouble(arrayOfLines[k]);
+                        String temp3NumbersString = String.valueOf(temp3Numbers);
+
+                        if(temp3NumbersString.equals(numberToSearch)){
+                            System.out.printf("Catch %s + %s + %s = %s\n", arrayOfLines[i], arrayOfLines[j], arrayOfLines[k], numberToSearch);
+                        }
+
                     }
-
-                    double temp = Double.parseDouble(arrayOfLines[i]) + Double.parseDouble(arrayOfLines[j]);
-                    String tempString = String.valueOf(temp);
-
-                    if (tempString.equals(numberToSearch)){
-                        System.out.printf("Catch %s + %s = %s\n", arrayOfLines[i], arrayOfLines[j], numberToSearch);
-                    }
-                    //System.out.println("get something");
                 }
             }
 
